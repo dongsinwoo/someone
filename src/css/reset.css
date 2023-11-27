@@ -1,0 +1,62 @@
+@charset "uft-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,li{
+    list-style: none;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+svg{
+    width: 100%;
+    height: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+:root{
+    --main-font-color : #343434;
+    --main-id-color :#62D0E8;
+    --active-color : #03BBE4;
+    --main-status-color :#AECFFF ;
+    --max-width : 1240px;
+    --center-margin : 0 auto;
+    --main-white-color : #fff;
+    --sub-font-color : #666666;
+    --color-bar : #94EBAC;
+    --nav-shadow: 0 -1px 10px rgba(0, 0, 0, 0.05);
+    --nav-off : #d4d4d4;
+    --search_box-color : #E2FAFF;
+    --search_main_off:#737272;
+    --star_color : #FFC700;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.inner_box{
+    width: 100%;
+    max-width: var(--max-width);
+    margin: var(--center-margin);
+}
+

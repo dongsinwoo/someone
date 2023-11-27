@@ -1,0 +1,502 @@
+@charset "utf-8";
+
+/* header */
+header{
+    width: 100%;
+    padding: 44px 0;
+}
+header .inner_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .main_logo{
+    width: 101px;
+    height: 56px;
+}
+header .status_icon{
+    width: 40px;
+    height: 40px;
+}
+/* //header */
+
+/* section */
+section{
+    width: 100%;
+    margin-bottom: 120px;
+}
+section .main_banner{
+    width: 100%;
+    height: 380px;
+    margin-bottom: 24px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+section .bottom_main_flex{
+    display: flex;
+    justify-content: space-between;
+}
+section .bottom_main_flex .main_ui{
+    width: 50%;
+    
+    border-radius: 15px;
+    height: 250px;
+    transition: all .5s;
+}
+/* section plus */
+section .bottom_main_flex .main_ui.plus{
+    margin-right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    background-color: var(--main-id-color);
+}
+section .bottom_main_flex .main_ui.plus:hover{
+    background-color: var(--active-color);
+}
+section .bottom_main_flex .main_ui.plus a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .bottom_main_flex .main_ui.plus .plus_icon{
+    margin-bottom: 20px;
+}
+/*// section plus */
+/* section status */
+section .bottom_main_flex .main_ui.status{
+    background-color: var(--main-status-color);
+    padding: 24px;
+}
+section .bottom_main_flex .main_ui.status a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+section .bottom_main_flex .main_ui.status .top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+section .bottom_main_flex .main_ui.status .top .head{
+    font-size: 24px;
+    color: var(--main-font-color);
+    font-weight: bold;
+}
+section .bottom_main_flex .main_ui.status .top .d-day{
+    font-size: 20px;
+    color: var(--main-white-color);
+    font-weight: bold;
+}
+section .bottom_main_flex .main_ui.status .sub_head{
+    color: var(--sub-font-color);
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+section .bottom_main_flex .main_ui.status .mid{
+    margin-bottom: 16px;
+}
+section .bottom_main_flex .main_ui.status .users{
+    display: flex;
+    align-items: center;
+}
+section .bottom_main_flex .main_ui.status .users .icon{
+    width: 50px;
+    height: 50px;
+    color: #343434;
+}
+section .bottom_main_flex .main_ui.status .users .icon svg{
+    width: 100%;
+    height: 100%;
+}
+section .bottom_main_flex .main_ui.status .users .icon svg path{
+    fill : var(--main-font-color)
+}
+section .bottom_main_flex .main_ui.status .user{
+    font-size: 20px;
+    color: var(--main-font-color);
+    font-weight: 500;
+}
+section .bottom_main_flex .main_ui.status .bottom{
+    width: 100%;
+    height: auto;
+
+}
+section .bottom_main_flex .main_ui.status .status_bar{
+    width: 100%;
+    height: 28px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+section .bottom_main_flex .main_ui.status .status_bar p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+section .bottom_main_flex .main_ui.status .status_bar .color_bar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 66%;
+    height: 100%;
+    background-color: var(--color-bar);
+
+}
+/* //section status */
+/* //section */
+
+/* nav */
+nav{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+}
+nav .inner_box{
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: var(--nav-shadow);
+    background-color: #fff;
+}
+
+nav .router_btn{
+    text-align: center;
+    margin-right: 140px;
+}
+nav .router_btn:last-child{
+    margin-right: 0;
+}
+nav .router_btn .icon_txt{
+    color : var(--nav-off);
+}
+nav .router_btn.on .icon svg path{
+    fill: var(--main-id-color);
+}
+nav .router_btn.on .icon_txt{
+    color: var(--main-id-color);
+}
+/* //nav */
+
+/* search */
+/* search_box */
+.search_box{
+    position: relative;
+    width: 1128px;
+    height: 52px;
+}
+.search_box input{
+    width: 100%;
+    height: 100%;
+    background-color: var(--search_box-color);
+    padding: 0 56px;
+    font-size: 20px;
+    border-radius: 15px;
+    color: var(--main-font-color);
+}
+.search_box .absolute{
+    position: absolute;
+    
+}
+.search_box .search_icon{
+    width: 28px;
+    height: 28px;
+    left: 28px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.search_box .right_icon{
+    width: 28px;
+    height: 28px;
+    right: 28px;
+    top: 50%;
+    transform: translate(50%,-50%);
+}
+/* //search_box */
+
+/* sec_top */
+.search .sec_top{
+    width: 100%;
+    border-bottom: 5px solid var(--main-id-color);
+}
+.search .sec_top .head{
+    display: flex;
+    margin-bottom: 12px;
+}
+.search .sec_top .head li{
+    font-size: 24px;
+    color: var(--nav-off);
+    margin-left: 12px;
+}
+.search .sec_top .head li.on{
+    color: var(--main-id-color);
+}
+.search .sec_top .head li a{
+    padding: 12px;
+}
+/*// sec_top */
+/* sec_content */
+.search .sec_content .content a{
+    display: flex;
+    width: 100%;
+    padding: 30px 0;
+}
+.search .sec_content .content a .thumbnail_box{
+    width: 124px;
+    height: 124px;
+}
+.search .sec_content .content .text_box{
+    width: calc(100% - 140px);
+    margin-left: 16px;
+}
+.search .sec_content .content .text_box .top_head{
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-font-color);
+}
+.search .sec_content .content .text_box .top_head .head{
+    font-size: 28px;
+    font-weight: bold;
+}
+.search .sec_content .content .text_box .mid{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: var(--main-font-color);
+    margin-top: 4px;
+}
+
+.search .sec_content .content .text_box .mid strong{
+    display: block;
+    height: 20px;
+    width: 4px;
+    background-color: var(--main-font-color);
+    margin: 0 12px;
+}
+.search .sec_content .content .text_box .hash_bottom{
+    display: flex;
+    margin-top: 28px;
+    color: var(--search_main_off);
+}
+.search .sec_content .content .text_box .hash_bottom p{
+    margin-right: 8px;
+} 
+/* //sec_content */
+/* //search */
+
+/* group */ 
+.group .sec_content .content .text_box .star{
+    width: 32px;
+    height: 32px;
+}
+
+.group .sec_content .content .text_box .star label{
+    cursor: pointer;
+    color: #343434;
+}
+.star input[type="checkbox"]{
+    display: none;
+}
+.star input[type="checkbox"]:checked + label svg path {
+    fill: var(--star_color);
+  }
+.group .sec_content .content .text_box .group_bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+    color: var(--search_main_off);
+    font-size: 20px;
+}
+/* //group */
+
+/* me */
+/* top_profile */
+.user .user_profile{
+    display: flex;
+    align-items: center;
+}
+.user .user_profile .user_img{
+    width: 100px;
+    height: 100px;
+}
+.user .user_profile .user_info{
+    margin-left: 16px;
+    color: var(--main-font-color);
+}
+.user .user_profile .user_info .name{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.user .user_profile .user_info .follo{
+    display: flex;
+    font-size: 20px;
+}
+.user .user_profile .user_info .follo p:first-child{
+    margin-right: 28px;
+}
+/* //top_profile */
+
+/* bottom_text */
+.user .bottom_text{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+.user .bottom_text .hash_txt{
+    display: flex;
+}
+.user .bottom_text .hash_txt p{
+    margin-right: 12px;
+    font-weight: 500;
+    color: var(--sub-font-color);
+    font-size: 20px;
+}
+.user .bottom_text .history a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    color:var(--main-font-color);
+}
+.user .bottom_text .history a .icon{
+    margin-left: 4px;
+}
+
+.line{
+    width: 100%;
+    height: 6px;
+    background-color: var(--main-id-color);
+    border-radius: 10px;
+    margin: 8px 0;
+}
+/* //bottom_text */
+
+/* mid_content */
+.user .mid_content{
+    display: flex;
+    margin-top: 12px;
+}
+.user .mid_content .project_history{
+    width: 50%;
+    height: 200px;
+    border-radius: 15px;
+    color: #343434;
+}
+.user .mid_content .project_history:first-child{
+    margin-right: 20px;
+    background: url(../public/imgs/me_project.png) no-repeat center;
+    background-size: cover;
+}
+.user .mid_content .project_history:last-child{
+    background: url(../public/imgs/me_user.png) no-repeat center;
+    background-size: cover;
+}
+.user .mid_content .project_history a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+/* bottom_content */
+.user .bottom_content{
+    margin-top: 80px;
+}
+.user .bottom_content .head{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.user .bottom_content .head .txt{
+    font-size: 28px;
+    font-weight: bold;
+}
+/* //bottom_content */
+/* //mid_content */
+/* //me */
+
+/* plus */
+/* 인풋의 공통부분 */
+.form form{
+    margin-top: 32px;
+}
+.form .info_txt{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.form input[type = "text"]{
+    background-color: var(--search_box-color);
+    height: 44px;
+    border-radius: 15px;
+    padding: 0 24px;
+    font-size: 18px;
+}
+.form .head .title{
+    width: 100%;
+}
+.form .head{
+    margin-bottom: 48px;
+}
+.form .max_user_skill_img{
+    display: flex;
+    margin-bottom: 60px;
+}
+.form .max_user_skill_img div{
+    margin-right: 60px;
+}
+.form .max_user_skill_img div:last-child{
+    margin-right: 0;
+}
+.form .max_user_input{
+    width: 284px;
+}
+.form .user_skill_input{
+    width: 500px;
+}  
+.form .user_img_input{
+    width: 336px;
+    border-radius: 5px;
+    background-color: var(--search_box-color);
+}
+
+.form .bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.form .bottom .btn{
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: var(--main-font-color);
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.form .bottom .btn.on{
+    background-color: var(--main-id-color);
+}
+/* //인풋의 공통부분 */
+/* //plus */
